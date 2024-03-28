@@ -12,12 +12,12 @@ namespace Food.Services.CouponAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CouponApiController : ControllerBase
+    public class DiscountController : ControllerBase
     {
         private readonly ICouponRepository _repository;
         private readonly IMapper _mapper;
 
-        public CouponApiController(ICouponRepository repository, IMapper mapper)
+        public DiscountController(ICouponRepository repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;
